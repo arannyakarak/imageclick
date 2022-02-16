@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Image</title>
+    <style type="text/css">
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: rgb(6, 92, 92);
+        }
+
+        img#getImage {
+            width: 450px;
+            height: 300px;
+            border: 4px solid #a1a1a1;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        input[type=button] {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: rgba(62, 204, 197, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Enjoy The Changing image onClick! </h2>
+        <img src="img/shutterstock.jpg" id="getImage">
+
+    </div>
+    <div class="button">
+        <input type="button" onclick="imagechange()" value="Change Image">
+    </div>
+    <script>
+        function imagechange() {
+            var Image_Id = document.getElementById("getImage");
+            if (Image_Id.src.match("img/shutterstock.jpg")) {
+                Image_Id.src = "img/web.jpeg";
+            } else {
+                Image_Id.src = "img/shutterstock.jpg";
+            }
+        }
+    </script>
+</body>
+
+</html>
