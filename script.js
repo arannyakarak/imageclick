@@ -40,7 +40,7 @@ var colors = [
   var currentColor = 0;
   
   /* add an event listener to the container - Every time
-   click in the container, we execute the click function */
+   click in the container, execute the click function */
 
 //  mainContainer.addEventListener('click', click);
   
