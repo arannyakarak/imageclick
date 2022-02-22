@@ -13,7 +13,7 @@ html{
     height: 70vh;
     background: rgba(20,20,20,0.5);
     margin:5% auto;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 10px solid rgb(77, 20, 20);
     position: relative;
     cursor: pointer;
