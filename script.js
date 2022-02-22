@@ -9,7 +9,6 @@ function imagechange() {
 
 
 const text  = document.querySelector('.mainText');
-
 const mainContainer  = document.querySelector('.container');
 
 mainContainer.addEventListener("mousemove", runEvent);
@@ -56,8 +55,6 @@ var colors = [
      new color. */
     document.body.style.backgroundColor = colors[currentColor];
   }
-
-  
   /*  window has finished loading, update the body to 
    the first color */
   window.onload = function() {
@@ -65,8 +62,9 @@ var colors = [
     spot.style.opacity = 0
   }
 
+  //spot move on container with cursor
   var spot = document.getElementById('spotLight'); 
-
+ // add an event listener to the container to move spot
 mainContainer.addEventListener('mousemove', (e) => {
     spot.style.transform = `translateY(${e.clientY - 25}px)`;
     spot.style.transform += `translateX(${e.clientX - 25}px)`;
