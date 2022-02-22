@@ -19,18 +19,18 @@ function runEvent(e){
 
     //print vlue of the mouse on move on the container: 
     text.textContent = `Mouse-moveX: ${e.offsetX},  Mouse-moveY: ${e.offsetY}`;
-    //change body background color taking the coordinates as values of rgb:
-//    document.body.style.backgroundColor = `rgb(${e.offsetX}, 360, ${e.offsetY})`;
+    
 }
 
 
 
 var colors = [
-    '#7b7554',
-    '#17183b',
-    '#a11692',
-    '#ff4f79',
-    '#ffb49a'
+    '#9400d3',
+    '#4b0082',
+    '#0000ff',
+    '#00ff00',
+    '#ffff00',
+    '#ff0000'
   ];
   // a variable for the current color index
   var currentColor = 0;
@@ -62,7 +62,7 @@ var colors = [
 
  
 
-var spot = document.getElementById('overLight');
+var spot = document.getElementById('spotLight');
 mainContainer.addEventListener('mousemove', (e) => {
   
     spot.style.transform = `translateY(${e.clientY - 25}px)`;
