@@ -1,9 +1,9 @@
 function imagechange() {
     var Image_Id = document.getElementById("getImage");
-    if (Image_Id.src.match("img/laptop.jpg")) {
-        Image_Id.src = "img/web.jpeg";
+    if (Image_Id.src.match("img/JOE.jpg")) {
+        Image_Id.src = "img/shutterstock2.jpg";
     } else {
-        Image_Id.src = "img/laptop.jpg";
+        Image_Id.src = "img/JOE.jpg";
     }
 }
 
@@ -16,10 +16,14 @@ mainContainer.addEventListener("mousemove", runEvent);
 //event handler
 function runEvent(e){
     e.preventDefault();
-
+    
     //print vlue of the mouse on move on the container: 
     text.textContent = `Mouse-moveX: ${e.offsetX},  Mouse-moveY: ${e.offsetY}`;
-    
+   // to see the output in the JS console
+    console.log("Client: " , e.clientX , e.clientY)
+    console.log("Page: " , e.pageX , e.pageY)
+    console.log("Screen: " , e.screenX , e.screenY)
+    console.log("Event Object: ", e);
 }
 
 
