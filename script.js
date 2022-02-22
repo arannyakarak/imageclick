@@ -56,19 +56,18 @@ var colors = [
      new color. */
     document.body.style.backgroundColor = colors[currentColor];
   }
+
   
   /*  window has finished loading, update the body to 
    the first color */
   window.onload = function() {
     document.body.style.backgroundColor = colors[currentColor];
+    spot.style.opacity = 0
   }
-  
 
- 
+  var spot = document.getElementById('spotLight'); 
 
-var spot = document.getElementById('spotLight');
 mainContainer.addEventListener('mousemove', (e) => {
-  
     spot.style.transform = `translateY(${e.clientY - 25}px)`;
     spot.style.transform += `translateX(${e.clientX - 25}px)`;
     spot.style.opacity = 1;}
